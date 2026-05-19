@@ -1,0 +1,24 @@
+{
+  "name": "teamair-growth-engine",
+  "version": "1.0.0",
+  "description": "AI lead capture and follow-up system for local businesses",
+  "main": "lib/index.js",
+  "scripts": {
+    "dashboard": "./scripts/dashboard.sh",
+    "test": "echo \"Tests not yet implemented\" && exit 0"
+  },
+  "keywords": [
+    "openclaw",
+    "ai",
+    "lead-generation",
+    "sms",
+    "automation",
+    "local-business"
+  ],
+  "author": "TeamAir AI",
+  "license": "Commercial",
+  "dependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

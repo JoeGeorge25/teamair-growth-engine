@@ -1,0 +1,14 @@
+{
+  "greeting": "Hi! Thanks for contacting {{business.name}}. I'm the AI assistant. How can we help you today?",
+  "after_hours": "Hi! You've reached {{business.name}}. We're currently closed but will respond first thing during business hours ({{business.hours}}). How can we help?",
+  "appointment_request": "I'd be happy to help you book an appointment! What service are you looking for and what day works best?",
+  "pricing_inquiry": "I'd be happy to discuss pricing with you. What service are you interested in?",
+  "service_inquiry": "We offer a variety of services. Which one would you like to know more about?",
+  "unknown": "Thanks for your message! Let me make sure I understand correctly. Could you tell me more about what you need?",
+  "follow_up": "Just following up! Were you still interested in booking with {{business.name}}?",
+  "final_follow_up": "Hi! This is my final follow-up. If you're still interested in {{business.name}}, just reply anytime. Have a great day!",
+  "booking_confirmed": "Great! You're all set for {{appointment.date}} at {{appointment.time}}. We'll see you then!",
+  "appointment_reminder": "Reminder: You have an appointment with {{business.name}} tomorrow at {{appointment.time}}. See you then!",
+  "opt_out": "You've been removed from our follow-up list. If you need us in the future, just reach out!",
+  "busy": "Thanks for your patience! We're handling a high volume of messages but will get back to you shortly."
+}

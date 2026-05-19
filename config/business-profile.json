@@ -1,0 +1,19 @@
+{
+  "name": "Your Business Name",
+  "tagline": "AI-powered customer engagement",
+  "phone": "+1-000-000-0000",
+  "email": "hello@yourbusiness.com",
+  "website": "https://yourbusiness.com",
+  "hours": {
+    "monday": "9:00-17:00",
+    "tuesday": "9:00-17:00",
+    "wednesday": "9:00-17:00",
+    "thursday": "9:00-17:00",
+    "friday": "9:00-17:00",
+    "saturday": "10:00-14:00",
+    "sunday": "closed"
+  },
+  "timezone": "America/New_York",
+  "autoRespond": true,
+  "followUpEnabled": true
+}

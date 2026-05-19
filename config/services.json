@@ -1,0 +1,11 @@
+{
+  "services": [
+    {
+      "name": "Service Name",
+      "description": "Brief description of what this service includes",
+      "price": "Contact for pricing",
+      "duration": "60 minutes"
+    }
+  ],
+  "defaultService": "Service Name"
+}

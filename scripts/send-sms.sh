@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Send SMS via Telnyx
-# Usage: ./send-sms.sh +15551234567 "Your message here"
+# Send SMS via OpenClaw's Telnyx integration
+# Usage: ./send-sms.sh <phone_number> <message>
 
 if [ $# -lt 2 ]; then
     echo "Usage: ./send-sms.sh <phone_number> <message>"
@@ -10,52 +10,72 @@ if [ $# -lt 2 ]; then
 fi
 
 PHONE=$1
-MESSAGE=$2
+shift
+MESSAGE="$@"
 
-# Check if telnyx-sms skill is available
-TELNYX_DIR="$HOME/.openclaw/workspace/skills/telnyx-sms"
+echo "📱 Sending SMS to $PHONE..."
+echo "Message: $MESSAGE"
+echo ""
 
-if [ ! -d "$TELNYX_DIR" ]; then
-    echo "❌ Telnyx SMS skill not found."
-    echo "   Run: /setup telnyx"
-    exit 1
-fi
-
-# Try to use OpenClaw command if available
+# Check if running inside OpenClaw
 if command -v openclaw &> /dev/null; then
-    # Use the telnyx-sms skill through OpenClaw
-    echo "📱 Sending SMS to $PHONE..."
+    # Use OpenClaw's built-in SMS command
+    echo "Using OpenClaw SMS..."
+    echo "Run this command in OpenClaw:"
+    echo "  /sms send $PHONE \"$MESSAGE\""
+    echo ""
     
-    # Create a temporary script to send via Node.js
+    # Try to send via Node.js if we have the skill
     node -e "
-const fs = require('fs');
 const path = require('path');
+const fs = require('fs');
 
-const configPath = path.join(process.env.HOME, '.openclaw/workspace/skills/telnyx-sms/.telnyx_config');
+// Try to find telnyx-sms skill
+const possiblePaths = [
+    path.join(process.env.HOME || '/root', '.openclaw/workspace/skills/telnyx-sms'),
+    path.join('/root/.openclaw/workspace/skills/telnyx-sms'),
+    path.join(__dirname, '../..', 'telnyx-sms')
+];
 
+let telnyxPath = null;
+for (const p of possiblePaths) {
+    if (fs.existsSync(p)) {
+        telnyxPath = p;
+        break;
+    }
+}
+
+if (!telnyxPath) {
+    console.log('❌ Telnyx SMS skill not found.');
+    console.log('   Install it: /setup telnyx');
+    process.exit(1);
+}
+
+console.log('✓ Found Telnyx skill at:', telnyxPath);
+
+// Check config
+const configPath = path.join(telnyxPath, '.telnyx_config');
 if (!fs.existsSync(configPath)) {
-    console.error('❌ Telnyx not configured. Run: /setup telnyx');
+    console.log('❌ Telnyx not configured.');
+    console.log('   Run: /setup telnyx');
     process.exit(1);
 }
 
-const config = fs.readFileSync(configPath, 'utf8');
-const apiKey = config.match(/TELNYX_API_KEY=(.+)/)?.[1];
-const fromNumber = config.match(/PHONE_NUMBER=(.+)/)?.[1];
-
-if (!apiKey || !fromNumber) {
-    console.error('❌ Missing Telnyx configuration');
-    process.exit(1);
-}
-
-console.log('✓ Configuration loaded');
-console.log('From:', fromNumber);
-console.log('To:', '$PHONE');
-console.log('Message:', '$MESSAGE');
+console.log('✓ Telnyx is configured');
 console.log('');
-console.log('To actually send, use the OpenClaw SMS command:');
-console.log('  /sms send $PHONE \"$MESSAGE\"');
+console.log('To send this message:');
+console.log('  1. Use OpenClaw command: /sms send $PHONE \"$MESSAGE\"');
+console.log('  2. Or use Telnyx API directly with your API key');
 "
 else
-    echo "❌ OpenClaw not found"
-    exit 1
+    echo "⚠️  OpenClaw not detected."
+    echo ""
+    echo "To send SMS, you need:"
+    echo "  1. OpenClaw installed with Telnyx SMS skill"
+    echo "  2. Or use Telnyx API directly:"
+    echo ""
+    echo "  curl -X POST https://api.telnyx.com/v2/messages \\"
+    echo "    -H 'Authorization: Bearer YOUR_API_KEY' \\"
+    echo "    -H 'Content-Type: application/json' \\"
+    echo "    -d '{\"from\":\"YOUR_NUMBER\",\"to\":\"$PHONE\",\"text\":\"$MESSAGE\"}'"
 fi

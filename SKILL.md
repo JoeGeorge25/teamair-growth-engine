@@ -9,6 +9,10 @@ metadata:
     pricing:
       setup: 997
       monthly: 297
+    triggers:
+      - /growth-engine
+      - /engine
+      - /leads
 ---
 
 # TeamAir AI Growth Engine
@@ -36,7 +40,19 @@ A complete AI-powered lead capture and follow-up system for local businesses. Tu
 
 ## Quick Start
 
-### 1. Install the Skill
+### Option 1: Use in OpenClaw (Easiest)
+
+Simply type:
+```
+/growth-engine
+```
+
+Or:
+```
+/engine dashboard
+```
+
+### Option 2: Manual Install
 
 ```bash
 cd ~/.openclaw/workspace/skills

@@ -1,0 +1,20 @@
+{
+  "new_lead": [
+    { "delay": "5 minutes", "message": "greeting", "condition": "no_response" },
+    { "delay": "1 day", "message": "follow_up", "condition": "no_response" },
+    { "delay": "3 days", "message": "follow_up", "condition": "no_response" },
+    { "delay": "7 days", "message": "final_follow_up", "condition": "no_response" }
+  ],
+  "appointment_booked": [
+    { "delay": "immediate", "message": "booking_confirmed" },
+    { "delay": "1 day before", "message": "appointment_reminder" }
+  ],
+  "no_response": [
+    { "delay": "2 hours", "message": "follow_up", "condition": "no_response" },
+    { "delay": "1 day", "message": "follow_up", "condition": "no_response" }
+  ],
+  "quote_requested": [
+    { "delay": "1 hour", "message": "follow_up", "condition": "no_response" },
+    { "delay": "2 days", "message": "follow_up", "condition": "no_response" }
+  ]
+}

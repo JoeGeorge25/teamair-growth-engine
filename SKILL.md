@@ -7,8 +7,9 @@ metadata:
     emoji: 🚀
     category: business
     pricing:
-      setup: 997
-      monthly: 297
+      diy: free
+      done_for_you_setup: 997
+      optional_management: 297
     triggers:
       - /growth-engine
       - /engine
@@ -56,7 +57,7 @@ Or:
 
 ```bash
 cd ~/.openclaw/workspace/skills
-git clone https://github.com/JoeGeorge25/teamair-growth-engine.git
+git clone https://github.com/JoeGeorge25/roofing-growth-engine.git
 cd teamair-growth-engine
 ./install.sh
 ```

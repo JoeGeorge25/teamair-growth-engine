@@ -1,0 +1,54 @@
+{
+  "scenario": "Insurance Claim Assistance",
+  "description": "Homeowner navigating insurance claim process",
+  "conversation": [
+    {
+      "sender": "lead",
+      "message": "My insurance company said I need to get an estimate for roof repairs. Do you work with insurance?"
+    },
+    {
+      "sender": "ai",
+      "message": "Yes — we work with insurance claims regularly! Most homeowners first schedule a roof inspection so we can document the damage properly. Have you already filed a claim, or would you like help with that process?"
+    },
+    {
+      "sender": "lead",
+      "message": "I filed a claim yesterday. They gave me a claim number and said an adjuster will call me."
+    },
+    {
+      "sender": "ai",
+      "message": "Perfect! Having the claim number is great. Here's what typically happens next: First, we do a full roof inspection and document all damage with photos. Then when your adjuster schedules their visit, we can meet them on-site to make sure nothing is missed. Insurance companies often approve more when a contractor is present."
+    },
+    {
+      "sender": "lead",
+      "message": "That would be helpful. Will my insurance rates go up if I file this claim?"
+    },
+    {
+      "sender": "ai",
+      "message": "That's a common concern! Storm damage claims are typically considered 'Acts of God' and shouldn't affect your rates the way an at-fault accident would. However, every insurance company is different, so I'd recommend asking your agent directly. The important thing is that storm damage left unrepaired can lead to much bigger problems and costs down the road."
+    },
+    {
+      "sender": "lead",
+      "message": "Good point. What's my deductible? I can't remember."
+    },
+    {
+      "sender": "ai",
+      "message": "Your deductible should be listed on your insurance policy documents or declaration page. It's usually a set amount like $500, $1,000, or $2,500. You can also call your insurance company's claims department with your claim number and they'll tell you. You'll pay that amount directly to us, and insurance covers the rest."
+    },
+    {
+      "sender": "lead",
+      "message": "Okay that makes sense. When can you come inspect?"
+    },
+    {
+      "sender": "ai",
+      "message": "I can schedule you for a free inspection this week. We have Tuesday morning, Wednesday afternoon, or Friday morning available. Which works best? Also, do you have your claim number handy? It helps us prepare the right documentation for your specific insurance company."
+    },
+    {
+      "sender": "lead",
+      "message": "Wednesday afternoon works. My claim number is ABC123456."
+    },
+    {
+      "sender": "ai",
+      "message": "Perfect! You're scheduled for Wednesday at 2:00 PM. We'll bring all the documentation your insurance company typically requires. After our inspection, we'll provide you and your adjuster with a detailed report and repair estimate. If you'd like, we can also contact your adjuster directly to coordinate scheduling. See you Wednesday!"
+    }
+  ]
+}

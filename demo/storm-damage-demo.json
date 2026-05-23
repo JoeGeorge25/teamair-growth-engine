@@ -1,0 +1,46 @@
+{
+  "scenario": "Storm Damage Inquiry",
+  "description": "Homeowner with hail damage from recent storm",
+  "conversation": [
+    {
+      "sender": "lead",
+      "message": "Hi, we had hail last night and I think my roof might be damaged. Can you help?"
+    },
+    {
+      "sender": "ai",
+      "message": "I'm sorry to hear about the hail damage! We specialize in storm damage repairs and work directly with insurance companies. When did the storm hit your area - was it last night? And do you see any visible damage like dented gutters or missing shingles?"
+    },
+    {
+      "sender": "lead",
+      "message": "Yes last night around 8pm. I see some shingles in my yard and my gutters look dented."
+    },
+    {
+      "sender": "ai",
+      "message": "That sounds like significant hail damage. Dented gutters and shingles in the yard are clear indicators. Are you seeing any water coming inside the house, or is it just exterior damage so far?"
+    },
+    {
+      "sender": "lead",
+      "message": "No water inside thankfully. Just the exterior damage."
+    },
+    {
+      "sender": "ai",
+      "message": "Good that there's no water intrusion yet, but hail damage can lead to leaks over time. I'd recommend scheduling a free inspection as soon as possible. We can assess the full extent of the damage and document everything for your insurance claim. What day works best for you this week?"
+    },
+    {
+      "sender": "lead",
+      "message": "Thursday afternoon would work."
+    },
+    {
+      "sender": "ai",
+      "message": "Perfect! I have Thursday 2:00 PM or 4:00 PM available. Which time works better? Also, could you send me a few photos of the damaged areas? You can text them directly to this number - it helps us prepare and give you a more accurate assessment."
+    },
+    {
+      "sender": "lead",
+      "message": "2pm works. I'll send photos now."
+    },
+    {
+      "sender": "ai",
+      "message": "Great! You're all set for Thursday at 2:00 PM. Please have your insurance information ready if you plan to file a claim. We'll inspect everything, document the damage with photos, and can even meet with your adjuster if needed. Thanks for choosing us!"
+    }
+  ]
+}

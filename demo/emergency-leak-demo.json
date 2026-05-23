@@ -1,0 +1,46 @@
+{
+  "scenario": "Emergency Leak",
+  "description": "Active water intrusion requiring immediate response",
+  "conversation": [
+    {
+      "sender": "lead",
+      "message": "HELP! Water is pouring through my ceiling!"
+    },
+    {
+      "sender": "ai",
+      "message": "This is an emergency! A few quick questions to help us prioritize: Is the water still actively coming in right now? Which room is affected - living room, bedroom, kitchen? And when did you first notice the leak?"
+    },
+    {
+      "sender": "lead",
+      "message": "Yes still coming in! It's the living room. Started about 30 minutes ago during the rain."
+    },
+    {
+      "sender": "ai",
+      "message": "Understood - this needs immediate attention. We have emergency slots available today. Can you safely place a bucket or container under the leak to minimize damage? Also, if you have access to your attic, check if you can see where the water is entering from the roof side."
+    },
+    {
+      "sender": "lead",
+      "message": "I put a bucket down. Can't get to the attic safely."
+    },
+    {
+      "sender": "ai",
+      "message": "Good - the bucket will help for now. I'm scheduling you for an emergency inspection today. We can be there between 2-4 PM or 4-6 PM. Which works better? We'll do a temporary patch to stop the water, then schedule the permanent repair."
+    },
+    {
+      "sender": "lead",
+      "message": "2-4pm please. How much will this cost?"
+    },
+    {
+      "sender": "ai",
+      "message": "Emergency service has a $295 dispatch fee which covers the temporary patching to stop the leak. The permanent repair cost depends on what we find - could be a simple shingle replacement ($200-400) or more extensive if there's underlying damage. We'll give you a full quote before doing any permanent work. Does that work?"
+    },
+    {
+      "sender": "lead",
+      "message": "Yes that's fine. Please come at 2pm."
+    },
+    {
+      "sender": "ai",
+      "message": "Confirmed! Emergency crew arriving today between 2-4 PM. They'll call 30 minutes before arrival. In the meantime, keep that bucket in place and move any furniture or electronics away from the leak area. If the leak gets significantly worse, call our emergency line at (555) ROOF-911. We'll take care of you!"
+    }
+  ]
+}

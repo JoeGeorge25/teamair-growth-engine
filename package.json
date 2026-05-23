@@ -1,18 +1,22 @@
 {
-  "name": "teamair-growth-engine",
+  "name": "roofing-growth-engine",
   "version": "1.0.0",
-  "description": "AI lead capture and follow-up system for local businesses",
+  "description": "AI-powered roofing lead capture and storm damage qualification system",
   "main": "lib/index.js",
   "scripts": {
     "dashboard": "./scripts/dashboard.sh",
+    "setup": "./setup.sh",
     "test": "echo \"Tests not yet implemented\" && exit 0"
   },
   "keywords": [
     "openclaw",
     "ai",
+    "roofing",
+    "storm-damage",
     "lead-generation",
     "sms",
     "automation",
+    "insurance-claims",
     "local-business"
   ],
   "author": "TeamAir AI",

@@ -1,19 +1,27 @@
 {
-  "name": "Your Business Name",
-  "tagline": "AI-powered customer engagement",
-  "phone": "+1-000-000-0000",
-  "email": "hello@yourbusiness.com",
-  "website": "https://yourbusiness.com",
+  "name": "ABC Roofing",
+  "tagline": "Roofing Revenue Recovery - Never lose a roofing job to voicemail again",
+  "phone": "+1-555-ROOF-911",
+  "email": "inspections@abcroofing.com",
+  "website": "https://abcroofing.com",
   "hours": {
-    "monday": "9:00-17:00",
-    "tuesday": "9:00-17:00",
-    "wednesday": "9:00-17:00",
-    "thursday": "9:00-17:00",
-    "friday": "9:00-17:00",
-    "saturday": "10:00-14:00",
-    "sunday": "closed"
+    "monday": "7:00-19:00",
+    "tuesday": "7:00-19:00",
+    "wednesday": "7:00-19:00",
+    "thursday": "7:00-19:00",
+    "friday": "7:00-19:00",
+    "saturday": "8:00-17:00",
+    "sunday": "Emergency only"
   },
   "timezone": "America/New_York",
   "autoRespond": true,
-  "followUpEnabled": true
+  "followUpEnabled": true,
+  "specialties": [
+    "Storm damage restoration",
+    "Insurance claim assistance",
+    "Emergency leak repair",
+    "Residential roof replacement"
+  ],
+  "serviceArea": "Greater Metro Area - 50 mile radius",
+  "emergencyLine": "+1-555-ROOF-911"
 }

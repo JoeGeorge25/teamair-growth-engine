@@ -1,11 +1,35 @@
 {
   "services": [
     {
-      "name": "Service Name",
-      "description": "Brief description of what this service includes",
-      "price": "Contact for pricing",
-      "duration": "60 minutes"
+      "name": "Storm Damage Inspection",
+      "description": "Comprehensive roof inspection for hail, wind, and storm damage. Includes documentation for insurance claims.",
+      "price": "Free",
+      "duration": "45-60 minutes"
+    },
+    {
+      "name": "Roof Replacement",
+      "description": "Complete roof replacement with premium materials. Includes tear-off, new underlayment, and installation.",
+      "price": "Contact for quote",
+      "duration": "1-2 days"
+    },
+    {
+      "name": "Emergency Leak Repair",
+      "description": "Rapid response for active leaks and water intrusion. Temporary patching and permanent repair options.",
+      "price": "Emergency rates apply",
+      "duration": "Same day"
+    },
+    {
+      "name": "Insurance Claim Assistance",
+      "description": "Full support through the insurance claim process. We meet adjusters and document all damage.",
+      "price": "Free with approved claim",
+      "duration": "Varies"
+    },
+    {
+      "name": "Roof Maintenance",
+      "description": "Preventive maintenance including gutter cleaning, debris removal, and minor repairs.",
+      "price": "Starting at $299",
+      "duration": "2-4 hours"
     }
   ],
-  "defaultService": "Service Name"
+  "defaultService": "Storm Damage Inspection"
 }

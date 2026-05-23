@@ -1,6 +1,6 @@
 ---
-name: teamair-growth-engine
-description: "Complete AI lead capture and follow-up system for local businesses. Captures leads via SMS/Email, auto-responds, books appointments, and prevents missed revenue."
+name: roofing-growth-engine
+description: "AI-powered roofing lead capture and storm damage qualification system for roofing companies."
 version: 1.0.0
 metadata:
   openclaw:
@@ -15,9 +15,9 @@ metadata:
       - /leads
 ---
 
-# TeamAir AI Growth Engine
+# Roofing Growth Engine
 
-A complete AI-powered lead capture and follow-up system for local businesses. Turns missed calls and inquiries into booked appointments — automatically.
+AI-powered roofing inspection booking and storm damage response system. Recovers roofing jobs that normally go to voicemail — automatically.
 
 ## What It Does
 
